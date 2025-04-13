@@ -1,0 +1,28 @@
+codecov:
+  require_ci_to_pass: yes
+
+coverage:
+  precision: 2
+  round: down
+  range: "80...100"
+  status:
+    project:
+      default:
+        target: 80%        # Entspricht der TDD-Anforderung von ≥90% Coverage
+        threshold: 1%      # Erlaubt kleine Schwankungen
+    patch:
+      default:
+        target: 80%        # Erfordert 90% Coverage für neue Code-Änderungen
+        threshold: 1%
+
+ignore:
+  - "hekmat_mind/benches/**/*"  # Ignoriere Benchmark-Code
+  - "**/tests/**/*"             # Ignoriere Test-Code selbst
+  - "**/target/**/*"            # Ignoriere Build-Artefakte
+
+comment:
+  layout: "reach,diff,flags,files,footer"
+  behavior: default
+  require_changes: false  # Wenn true, werden Kommentare nur bei Änderungen der Coverage angezeigt
+  require_base: no
+  require_head: yes

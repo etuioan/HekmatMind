@@ -1,0 +1,36 @@
+# Rust build artifacts
+/target
+**/*.rs.bk
+Cargo.lock
+*.profraw
+
+# Betriebssystem-spezifische Dateien
+.DS_Store
+Thumbs.db
+
+# Persönliche Dateien
+*personal*
+*private*
+*notes.md
+
+# IDE-Einstellungen
+.idea/
+.vscode/
+*.swp
+*.swo
+
+#Dokumentation - nur architecture_overview.md behalten
+/docs/*
+
+
+
+# Testabdeckungs-Berichte (cargo tarpaulin) - temporär auskommentiert, um Dateien anzuzeigen
+# /target/
+# coverage/
+# coverage_report/
+# tarpaulin-report.html
+# lcov.info
+# *.profraw
+
+# Fügen Sie diese Zeile zu .gitignore hinzu - temporär auskommentiert
+# /coverage/

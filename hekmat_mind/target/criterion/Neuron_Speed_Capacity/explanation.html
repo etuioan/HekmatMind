@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HekmatMind Benchmark: Neuron_Speed_Capacity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 { color: #2c3e50; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
+        h2 { color: #3498db; margin-top: 25px; }
+        .container { margin-top: 20px; }
+        .component { background-color: #f7f9fa; padding: 15px; border-radius: 5px; }
+        .description { background-color: #edf7fd; padding: 15px; border-radius: 5px; margin-top: 20px; }
+        .values { background-color: #f5f5f5; padding: 15px; border-radius: 5px; margin-top: 20px; }
+        .interpretation { background-color: #f9f4e8; padding: 15px; border-radius: 5px; margin-top: 20px; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .return-link { margin-top: 30px; display: block; }
+    </style>
+</head>
+<body>
+    <h1>HekmatMind Benchmark: Neuron_Speed_Capacity</h1>
+
+    <div class="container">
+        <div class="component">
+            <h2>Komponente</h2>
+            <p>Neuron</p>
+        </div>
+
+        <div class="description">
+            <h2>Was wird hier gemessen?</h2>
+            <p>Dieser Benchmark misst die Effizienz der Kapazitätsberechnung eines Neurons. Er berechnet die Kapazität (Informationsverarbeitungsfähigkeit) für Neuronen mit unterschiedlichen Geschwindigkeiten und summiert die Ergebnisse. Dies testet, wie schnell das System die Kapazität vieler Neuronen berechnen kann.</p>
+        </div>
+
+        <div class="values">
+            <h2>Wie liest man die Werte?</h2>
+            <p>Die Werte zeigen die Gesamtzeit in Nanosekunden, die benötigt wird, um die Kapazität aller Neuronen im Geschwindigkeitsbereich zu berechnen und zu summieren. Ein niedrigerer Wert bedeutet, dass das System neuronale Eigenschaften effizienter berechnen kann.</p>
+        </div>
+
+        <div class="interpretation">
+            <h2>Interpretation der Criterion-Ausgabe</h2>
+            <ul>
+                <li><strong>Throughput</strong>: Je höher, desto besser (Operationen pro Sekunde)</li>
+                <li><strong>Average time</strong>: Durchschnittliche Laufzeit (niedriger ist besser)</li>
+                <li><strong>Slope</strong>: Anstieg der Regression (wie sich die Zeit mit der Eingabegröße ändert)</li>
+                <li><strong>MAD, SD</strong>: Streuungsmaße - niedrigere Werte bedeuten konsistentere Ergebnisse</li>
+                <li><strong>Bootstrapped CI</strong>: Konfidenzintervall der durchschnittlichen Laufzeit</li>
+            </ul>
+        </div>
+
+        <a href="./index.html" class="return-link">→ Zurück zur Übersicht</a>
+    </div>
+</body>
+</html>

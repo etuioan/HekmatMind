@@ -1,0 +1,26 @@
+[workspace]
+resolver = "3"
+members = [
+    "hekmat_mind",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+authors = ["HekmatMind Team"]
+description = "Eine biologisch inspirierte KI-Architektur"
+repository = "https://github.com/username/hekmat_mind"
+license = "MIT"
+
+[workspace.dependencies]
+# Häufig verwendete Abhängigkeiten hier definieren
+log = "0.4"
+env_logger = "0.10"
+thiserror = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Test-spezifische Abhängigkeiten
+proptest = "1.0"
+mockall = "0.11"
+criterion = "0.4"

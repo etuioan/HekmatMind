@@ -1,0 +1,51 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+        args: ['--maxkb=1500']
+
+  - repo: local
+    hooks:
+      - id: cargo-fmt
+        name: Cargo Format
+        description: Formatiert Rust-Code mit rustfmt
+        entry: cargo fmt --
+        language: system
+        types: [rust]
+        pass_filenames: false
+
+      - id: cargo-check
+        name: Cargo Check
+        description: Prüft, ob der Code kompiliert
+        entry: cargo check
+        language: system
+        types: [rust]
+        pass_filenames: false
+
+      - id: cargo-clippy
+        name: Cargo Clippy
+        description: Führt statische Codeanalyse durch
+        entry: cargo clippy -- -D warnings
+        language: system
+        types: [rust]
+        pass_filenames: false
+
+      - id: cargo-test
+        name: Cargo Test
+        description: Führt alle Tests aus
+        entry: cargo test
+        language: system
+        types: [rust]
+        pass_filenames: false
+
+      - id: cargo-doc
+        name: Cargo Doc
+        description: Prüft, ob die Dokumentation erstellt werden kann
+        entry: cargo doc --no-deps
+        language: system
+        types: [rust]
+        pass_filenames: false
