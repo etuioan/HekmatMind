@@ -1,41 +1,66 @@
 # HekmatMind
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/etuioan/HekmatMind/rust-ci.yml?branch=main&label=CI)
-![Code Coverage](https://img.shields.io/badge/Coverage-~80%25-brightgreen)
-![Rustdoc](https://img.shields.io/badge/Rustdoc-online-blue)
+> Eine biologisch inspirierte KI-Architektur, die auf emergente Eigenschaften von Bewusstsein abzielt.
 
-Eine biologisch inspirierte KI-Architektur, die auf emergente Eigenschaften von Bewusstsein abzielt.
+**HekmatMind** ist ein experimentelles Projekt zur Entwicklung einer KI-Architektur, die auf den Prinzipien biologischer neuronaler Netzwerke basiert. Ziel ist es, emergente Eigenschaften wie Selbstorganisation und (in späteren Phasen) Bewusstsein zu erforschen.
 
-## Projektübersicht
+-----
 
-Bin Hekmatullah, ich hab Ideen und will sie gerne in diesem Projekt ausleben. Bis jetzt kann mein Projekt noch nicht viel, aber ich bin auf dem Weg. Ich hab Verbindungen zwischen Neuronen erstellt, und die können coole Sachen machen.
- Die größte Schwierigkeit ist gerade das Skalieren und das Testen, eventuell auch Datenlayout-Optimierung. Gleichzeitig muss ich Wege finden, um die Architekturprobleme zu lösen, die in Zukunft architekturspezifisch auftreten können.
-Das heißt, jede Entscheidung meines Systems muss ich gründlich durchdenken.
+### 🌱 Projektübersicht
 
+Dieses Projekt ist mein kreativer Spielplatz für Ideen rund um neuronale Systeme, maschinelles Lernen und evolutionäre Architekturen. Aktuell befindet sich das Projekt in einer frühen Phase: Die grundlegende neuronale Verbindungsschicht ist funktionsfähig und zeigt bereits spannende Verhaltensweisen.
 
-## Hauptmerkmale
+**Aktuelle Herausforderungen:**
 
-- **Biologisch inspirierte Neuronennetzwerke**: Modelliert nach realen neuronalen Systemen
+  * **Skalierbarkeit:** Wie lassen sich zehntausende Neuronen effizient skalieren?
+  * **Testbarkeit:** Wie bleibt das System trotz wachsender Komplexität gut testbar?
+  * **Datenlayout & Performance:** Wie kann der Speicherzugriff für große neuronale Netzwerke optimiert werden?
+  * **Architekturentscheidungen:** Viele Designentscheidungen müssen zukunftssicher und evolvierbar sein.
 
+-----
 
-## Codequalität
+### 🔍 Hauptmerkmale
 
-Mein Projekt legt großen Wert auf Codequalität:
+  * **Biologisch inspirierte Neuronenschicht**
+      * Modular aufgebaut und an realen neuronalen Systemen orientiert (z.B. verschiedene Neurotransmitter, Synapsentypen, Plastizität).
+  * **Evolvierbare Architektur**
+      * Entwurfsmuster und Komponenten sind auf Flexibilität und langfristige Erweiterbarkeit ausgelegt.
+  * **Experimentell und explorativ**
+      * Das Projekt ist kein fertiges Produkt, sondern eine offene Forschungsplattform.
 
-- **Testabdeckung**: Mindestens 90% eher 80 % hahah  Codeabdeckung durch automatisierte Tests
+-----
 
-## Entwicklung
+### 🧪 Codequalität
 
-### Voraussetzungen
+Qualität steht im Vordergrund, auch wenn es sich um ein "Work in Progress" handelt:
 
-- Rust 1.85 oder höher
-- Cargo und rustup
-- Optional: cargo-criterion für Benchmarks, cargo-tarpaulin für Testabdeckung
-- Glaube openSSH und noch was muss auch installiert werden.
+  * **Testabdeckung:** Der Zielwert liegt bei **80–90 %**, umgesetzt durch automatisierte Unit- und Integrationstests.
+  * **Benchmarking:** Performance-Tests werden über `cargo-criterion` durchgeführt.
+  * **Tooling:** Es kommen moderne Rust-Toolchains zur Codeanalyse, Formatierung und Testabdeckung zum Einsatz.
 
-Benchmark ausführen: ->  -> benchmark_einfach.command
+-----
 
+### ⚙️ Entwicklung
 
-## Lizenz
+#### Voraussetzungen
 
-Für jeden.
+  * Rust `≥ 1.85`
+  * `cargo` & `rustup`
+  * **Optional:**
+      * `cargo-criterion` (für Benchmarks)
+      * `cargo-tarpaulin` (für Testabdeckung)
+      * `OpenSSH` (z.B. für Git-Authentifizierung)
+
+#### Benchmarks ausführen
+
+Führe das folgende Skript aus, um die Benchmarks zu starten:
+
+```bash
+./benchmark_einfach.command
+```
+
+-----
+
+### 🪪 Lizenz
+
+Dieses Projekt steht unter der **MIT-Lizenz**. Du kannst es frei nutzen, verändern und teilen. Beiträge sind jederzeit willkommen\!
